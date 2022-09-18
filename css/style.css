@@ -228,7 +228,7 @@ p {
 
 .projects-section {
   padding-top: 106px;
-  padding-bottom: 416px;
+  padding-bottom: 413px;
   color: #FFFFFF;
   background-color: #131313;
 }
@@ -342,9 +342,145 @@ p {
 /* ---------- control ------------ */
 
 .control-section {
-
+  margin-top: -326px;
 }
 
 .control-container {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
+
+.control__title {
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.control-icon {
+  display: flex;
+  width: 114px;
+  height: 28px;
+  background-image: url('../img/control/control-online-cam.svg');
+  margin-bottom: 30px;
+}
+
+.control-video {
+  margin-bottom: 57px;
+}
+
+.control-video__btn {
+  display: block;
+  position: absolute;
+  top: 273px;
+  border: none;
+  background-color: transparent;
+
+}
+
+.control__hr {
+  width: 55px;
+  border: 1px solid #E3B873;
+  border-radius: 30px;
+  margin-bottom: 28px;
+}
+
+.control__text {
+  width: 59%;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.control-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.control-form__label {
+  display: flex;
+  flex-direction: column;
+  color: rgba(54, 54, 54, 0.5);
+  font-size: 13px;
+  line-height: 21px;
+}
+.control-form__label:first-child {
+ margin-right: 58px;
+}
+
+.control-form__label:nth-child(2) {
+  margin-right: 48px;
+}
+
+.control-form__input {
+  width: 231px;
+  outline: none;
+  border: none;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.control-form__input::placeholder {
+  color: #363636;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.control-form__btn {
+  font-size: 13px;
+  font-style: normal;
+  padding: 22px 75px 14px;
+}
+
+.control-checkbox {
+  margin-top: 33px;
+}
+
+.control-checkbox__label {
+
+}
+
+.control-checkbox__input {
+  display: none;
+}
+
+.fake-input {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  color: #fff;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.fake-input::before {
+  content:"\2714";
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.control-checkbox__input:checked + .fake-input::before{
+  opacity: 1;
+  visibility: visible;
+}
+
+.control-checkbox__descr {
+  color: #181818;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+/* ---------- types ------------ */
+
+
+
+
