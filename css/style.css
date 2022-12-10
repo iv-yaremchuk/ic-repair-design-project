@@ -405,6 +405,11 @@ p {
   transition: opacity 0.2s linear;
 }
 
+.projects-slider-nav__btn {
+  font-size: 0;
+  background-color: transparent;
+}
+
 .projects-slider-nav__btn:hover path,
 .projects-slider-nav__btn:focus-visible path {
   fill: var(--color-harvestgold);
@@ -416,7 +421,7 @@ p {
   transition: fill 0.2s linear;
 }
 
-.projects-slider-nav__btn-prev {
+.projects-slider-nav__btn.prev {
   margin-right: 29px;
 }
 
@@ -455,15 +460,7 @@ p {
   background-color: var(--color-white);
 }
 
-.projects-slider-nav__btn-next {
-}
-
-.projects-slider-nav__btn-prev,
-.projects-slider-nav__btn-next,
-.fantasies-slider-nav__btn-prev,
-.fantasies-slider-nav__btn-next {
-  font-size: 0;
-  background-color: transparent;
+.projects-slider-nav__btn.next {
 }
 
 .projects-content-slider {
