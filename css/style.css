@@ -979,6 +979,7 @@ p {
   line-height: 37px;
   background-color: transparent;
   border: none;
+  outline: none;
   padding: 0;
   cursor: pointer;
   transition: color 0.2s linear;
