@@ -194,7 +194,7 @@ p {
 }
 
 .header-nav__link:hover,
-.footer-nav__link:hover {
+.footer-nav__link:hover, .header-nav__link:focus-visible, .footer-nav__link:focus-visible {
   color: var(--color-harvestgold);
 }
 
@@ -212,7 +212,7 @@ p {
 }
 
 .header-tel__link:hover,
-.footer-tel__link:hover {
+.footer-tel__link:hover, .header-tel__link:focus-visible, .footer-tel__link:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
@@ -224,7 +224,7 @@ p {
 }
 
 .header__btn:hover,
-.footer__btn:hover {
+.footer__btn:hover, .header__btn:focus-visible, .footer__btn:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
@@ -293,7 +293,7 @@ p {
 }
 
 .hero-fill__btn:hover,
-.hero-empty__btn:hover {
+.hero-empty__btn:hover, .hero-fill__btn:focus-visible, .hero-empty__btn:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
@@ -556,7 +556,7 @@ p {
   background-color: transparent;
 }
 
-.control-video__btn:hover {
+.control-video__btn:hover, .control-video__btn:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
@@ -620,7 +620,7 @@ p {
   padding: 22px 75px 14px;
 }
 
-.control-form__btn:hover {
+.control-form__btn:hover, .control-form__btn:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
@@ -672,7 +672,7 @@ p {
   visibility: visible;
 }
 
-.fake-input:hover {
+.fake-input:hover, .fake-input:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
@@ -898,7 +898,7 @@ p {
   margin-left: auto;
 }
 
-.types-advantage-form__btn:hover {
+.types-advantage-form__btn:hover, .types-advantage-form__btn:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
@@ -990,7 +990,7 @@ p {
   border-color: transparent;
 }
 
-.fantasies-select__btn:hover {
+.fantasies-select__btn:hover, .fantasies-select__btn:focus-visible {
   color: var(--color-harvestgold);
 }
 
@@ -1217,7 +1217,7 @@ p {
   padding: 15px 75px 7px;
   margin-bottom: 34px;
 }
-.contacts-form__btn:hover {
+.contacts-form__btn:hover, .contacts-form__btn:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
@@ -1248,7 +1248,7 @@ p {
   background-repeat: no-repeat;
 }
 
-.contacts-social__link:hover {
+.contacts-social__link:hover, .contacts-social__link:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
 }
