@@ -626,6 +626,7 @@ p {
 }
 
 .checkbox__label {
+  cursor: pointer;
 }
 
 .checkbox__input {
