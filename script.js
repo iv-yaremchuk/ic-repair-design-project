@@ -1,4 +1,3 @@
-
 const projectsAdmiral = {
   images: [
     './img/projects/projects-admiral-first.jpg',
@@ -174,14 +173,14 @@ function initProjectsSection() {
     });
   }
 
-  let projectObjectBtnAdmiral = document.querySelector(
-    '.projects-object__btn.admiral'
+  let projectChapterBtnAdmiral = document.querySelector(
+    '.projects-chapter__btn.admiral'
   );
-  let projectObjectBtnThieves = document.querySelector(
-    '.projects-object__btn.thieves'
+  let projectChapterBtnThieves = document.querySelector(
+    '.projects-chapter__btn.thieves'
   );
-  let projectObjectBtnPatriotic = document.querySelector(
-    '.projects-object__btn.patriotic'
+  let projectChapterBtnPatriotic = document.querySelector(
+    '.projects-chapter__btn.patriotic'
   );
 
   function activeAdmiralBtn() {
@@ -197,16 +196,16 @@ function initProjectsSection() {
       initSlider(projectsAdmiral.images, sliderOptions);
     }, 150);
 
-    projectObjectBtnAdmiral.classList.add('is-active');
-    projectObjectBtnAdmiral.setAttribute('tabindex', '-1');
-    projectObjectBtnThieves.classList.remove('is-active');
-    projectObjectBtnThieves.removeAttribute('tabindex', '-1');
-    projectObjectBtnPatriotic.classList.remove('is-active');
-    projectObjectBtnPatriotic.removeAttribute('tabindex', '-1');
+    projectChapterBtnAdmiral.classList.add('is-active');
+    projectChapterBtnAdmiral.setAttribute('tabindex', '-1');
+    projectChapterBtnThieves.classList.remove('is-active');
+    projectChapterBtnThieves.removeAttribute('tabindex', '-1');
+    projectChapterBtnPatriotic.classList.remove('is-active');
+    projectChapterBtnPatriotic.removeAttribute('tabindex', '-1');
 
-    projectObjectBtnAdmiral.removeEventListener('click', activeAdmiralBtn);
-    projectObjectBtnPatriotic.addEventListener('click', activePatrioticBtn);
-    projectObjectBtnThieves.addEventListener('click', activeThievesBtn);
+    projectChapterBtnAdmiral.removeEventListener('click', activeAdmiralBtn);
+    projectChapterBtnPatriotic.addEventListener('click', activePatrioticBtn);
+    projectChapterBtnThieves.addEventListener('click', activeThievesBtn);
 
     resetProjectsSection();
   }
@@ -224,16 +223,16 @@ function initProjectsSection() {
       initSlider(projectsThieves.images, sliderOptions);
     }, 150);
 
-    projectObjectBtnThieves.classList.add('is-active');
-    projectObjectBtnThieves.setAttribute('tabindex', '-1');
-    projectObjectBtnAdmiral.classList.remove('is-active');
-    projectObjectBtnAdmiral.removeAttribute('tabindex', '-1');
-    projectObjectBtnPatriotic.classList.remove('is-active');
-    projectObjectBtnPatriotic.removeAttribute('tabindex', '-1');
+    projectChapterBtnThieves.classList.add('is-active');
+    projectChapterBtnThieves.setAttribute('tabindex', '-1');
+    projectChapterBtnAdmiral.classList.remove('is-active');
+    projectChapterBtnAdmiral.removeAttribute('tabindex', '-1');
+    projectChapterBtnPatriotic.classList.remove('is-active');
+    projectChapterBtnPatriotic.removeAttribute('tabindex', '-1');
 
-    projectObjectBtnThieves.removeEventListener('click', activeThievesBtn);
-    projectObjectBtnAdmiral.addEventListener('click', activeAdmiralBtn);
-    projectObjectBtnPatriotic.addEventListener('click', activePatrioticBtn);
+    projectChapterBtnThieves.removeEventListener('click', activeThievesBtn);
+    projectChapterBtnAdmiral.addEventListener('click', activeAdmiralBtn);
+    projectChapterBtnPatriotic.addEventListener('click', activePatrioticBtn);
 
     resetProjectsSection();
   }
@@ -250,21 +249,21 @@ function initProjectsSection() {
       initSlider(projectsPatriotic.images, sliderOptions);
     }, 150);
 
-    projectObjectBtnPatriotic.classList.add('is-active');
-    projectObjectBtnPatriotic.setAttribute('tabindex', '-1');
-    projectObjectBtnThieves.classList.remove('is-active');
-    projectObjectBtnThieves.removeAttribute('tabindex', '-1');
-    projectObjectBtnAdmiral.classList.remove('is-active');
-    projectObjectBtnAdmiral.removeAttribute('tabindex', '-1');
+    projectChapterBtnPatriotic.classList.add('is-active');
+    projectChapterBtnPatriotic.setAttribute('tabindex', '-1');
+    projectChapterBtnThieves.classList.remove('is-active');
+    projectChapterBtnThieves.removeAttribute('tabindex', '-1');
+    projectChapterBtnAdmiral.classList.remove('is-active');
+    projectChapterBtnAdmiral.removeAttribute('tabindex', '-1');
 
-    projectObjectBtnPatriotic.removeEventListener('click', activePatrioticBtn);
-    projectObjectBtnAdmiral.addEventListener('click', activeAdmiralBtn);
-    projectObjectBtnThieves.addEventListener('click', activeThievesBtn);
+    projectChapterBtnPatriotic.removeEventListener('click', activePatrioticBtn);
+    projectChapterBtnAdmiral.addEventListener('click', activeAdmiralBtn);
+    projectChapterBtnThieves.addEventListener('click', activeThievesBtn);
 
     resetProjectsSection();
   }
 
-  projectObjectBtnAdmiral.addEventListener('click', activeAdmiralBtn);
-  projectObjectBtnThieves.addEventListener('click', activeThievesBtn);
-  projectObjectBtnPatriotic.addEventListener('click', activePatrioticBtn);
+  projectChapterBtnAdmiral.addEventListener('click', activeAdmiralBtn);
+  projectChapterBtnThieves.addEventListener('click', activeThievesBtn);
+  projectChapterBtnPatriotic.addEventListener('click', activePatrioticBtn);
 }
