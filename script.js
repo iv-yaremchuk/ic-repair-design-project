@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initSlider(projectsAdmiral.images, sliderOptions);
 });
 
-
 function initSlider(content, options) {
   if (!content || !content.length) return;
 

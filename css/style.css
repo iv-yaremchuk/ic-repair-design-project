@@ -207,6 +207,11 @@ p {
   color: var(--color-harvestgold);
 }
 
+.header-nav__link:active,
+.footer-nav__link:active {
+  color: var(--color-bronzegold);
+}
+
 .header-call__wrap,
 .footer-call__wrap {
   display: flex;
@@ -218,14 +223,19 @@ p {
   text-decoration: underline;
   color: var(--color-harvestgold);
   margin-right: 45px;
+  transition: color 0.2s linear;
 }
 
 .header-tel__link:hover,
 .footer-tel__link:hover,
 .header-tel__link:focus-visible,
 .footer-tel__link:focus-visible {
-  opacity: 0.85;
-  transition: opacity 0.2s linear;
+  color: var(--color-white);
+}
+
+.header-tel__link:active,
+.footer-tel__link:active {
+  color: var(--color-bronzegold);
 }
 
 .header__btn,
@@ -239,7 +249,12 @@ p {
 .header__btn:focus-visible,
 .footer__btn:focus-visible {
   opacity: 0.85;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear, background-color 0.2s linear;
+}
+
+.header__btn:active,
+.footer__btn:active {
+  background-color: var(--color-bronzegold);
 }
 
 /* ----------hero------------ */
@@ -303,14 +318,38 @@ p {
   background-color: transparent;
   border: 1px solid var(--color-white);
   padding: 19px 29px;
+  transition: color 0.2s linear, border-color 0.2s linear;
 }
 
 .hero-fill__btn:hover,
-.hero-empty__btn:hover,
+.control-form__btn:hover,
+.types-advantage-form__btn:hover,
+.contacts-form__btn:hover,
 .hero-fill__btn:focus-visible,
-.hero-empty__btn:focus-visible {
+.control-form__btn:focus-visible,
+.types-advantage-form__btn:focus-visible,
+.contacts-form__btn:focus-visible {
   opacity: 0.85;
   transition: opacity 0.2s linear;
+}
+
+.hero-empty__btn:hover,
+.hero-empty__btn:focus-visible {
+  color: var(--color-harvestgold);
+  border-color: var(--color-harvestgold);
+}
+
+.hero-fill__btn:active,
+.control-form__btn:active,
+.types-advantage-form__btn:active,
+.contacts-form__btn:active {
+  background-color: var(--color-bronzegold);
+  transition: background-color 0.2s linear;
+}
+
+.hero-empty__btn:active {
+  color: var(--color-bronzegold);
+  border-color: var(--color-bronzegold);
 }
 
 /* -------projects--------- */
@@ -639,12 +678,6 @@ p {
   padding: 22px 75px 14px;
 }
 
-.control-form__btn:hover,
-.control-form__btn:focus-visible {
-  opacity: 0.85;
-  transition: opacity 0.2s linear;
-}
-
 .checkbox__label {
   cursor: pointer;
 }
@@ -917,12 +950,6 @@ p {
   line-height: 21px;
   padding: 17px 39px 11px;
   margin-left: auto;
-}
-
-.types-advantage-form__btn:hover,
-.types-advantage-form__btn:focus-visible {
-  opacity: 0.85;
-  transition: opacity 0.2s linear;
 }
 
 .types-advantage-right__descr {
@@ -1241,11 +1268,6 @@ p {
   padding: 15px 75px 7px;
   margin-bottom: 34px;
 }
-.contacts-form__btn:hover,
-.contacts-form__btn:focus-visible {
-  opacity: 0.85;
-  transition: opacity 0.2s linear;
-}
 
 .contacts__address {
   margin-top: -486px;
@@ -1256,6 +1278,15 @@ p {
 }
 
 .contacts-tel__link {
+  transition: color 0.2s linear;
+}
+
+.contacts-tel__link:hover,
+.contacts-tel__link:focus-visible {
+  color: var(--color-white);
+}
+.contacts-tel__link:active {
+  color: var(--color-bronzegold);
 }
 
 .contacts-social__wrap {
